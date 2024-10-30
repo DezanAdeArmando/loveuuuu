@@ -1,0 +1,70 @@
+body {
+    background-color: #f0f0f0; /* Latar belakang abu-abu muda */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundChange 10s infinite alternate; /* Animasi latar belakang */
+}
+
+@keyframes backgroundChange {
+    0% { background-color: #ffcccb; } /* Merah muda */
+    50% { background-color: #add8e6; } /* Biru muda */
+    100% { background-color: #90ee90 ; } /* Hijau muda */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih transparan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#romantic-message {
+    font-size: 48px;
+    color: #ff69b4; /* Warna pink */
+    min-height: 60px; /* Menjaga tinggi tetap */
+}
+
+#repeat-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff69b4; /* Warna tombol */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#repeat-button:hover {
+    background-color: #ff1493; /* Warna tombol saat hover */
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    #romantic-message {
+        font-size: 36px;
+    }
+    #repeat-button {
+        font-size: 16px;
+    }
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #romantic-message {
+        font-size: 24px;
+    }
+    #repeat-button {
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+    }
+}
